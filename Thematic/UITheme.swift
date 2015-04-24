@@ -26,7 +26,9 @@ import UIKit
 
 public protocol UITheme
 {
-    static func sharedTheme() -> UITheme
+    typealias Theme
+
+    static func sharedTheme() -> Theme
 
     // MARK - Fonts
 
