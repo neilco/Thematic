@@ -26,7 +26,7 @@ import UIKit
 
 public protocol UITheme
 {
-    static func sharedTheme() -> UITheme;
+    static func sharedTheme() -> UITheme
 
     // MARK - Fonts
 
@@ -35,9 +35,21 @@ public protocol UITheme
     var bodyFont: UIFont { get }
     var labelFont: UIFont { get }
     var buttonFont: UIFont { get }
+    var navigationBarFont: UIFont  { get }
 
     // MARK - Colors
 
     var darkTintColor: UIColor { get }
     var lightTintColor: UIColor { get }
+    var barTintColor: UIColor { get }
+
+    var titleFontSize: CGFloat { get }
+    var subtitleFontSize: CGFloat { get }
+    var bodyFontSize: CGFloat { get }
+    var labelFontSize: CGFloat { get }
+    var buttonFontSize: CGFloat { get }
+    
+    var smallCornerRadius: CGFloat { get }
+    var mediumCornerRadius: CGFloat { get }
+    var largeCornerRadius: CGFloat { get }
 }
